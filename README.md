@@ -1,73 +1,43 @@
-# React + TypeScript + Vite
+# React Cafe Feedback App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is the second homework assignment for the React module.
 
-Currently, two official plugins are available:
+The application allows users to leave feedback for a café by choosing one of three options: Good, Neutral, or Bad. Based on user input, the app displays feedback statistics, including the total number of votes and the percentage of positive feedback.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+- Voting system with three feedback options
+- Dynamic statistics calculation
+- Conditional rendering of statistics and notification
+- Reset button to clear feedback
 
-## React Compiler
+## Technologies
+- React
+- TypeScript
+- Vite
+- CSS Modules
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+## Live Demo
+Deployed on Vercel.
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+# React Cafe Feedback App
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Цей проєкт є другим домашнім завданням з модуля React.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Застосунок дозволяє користувачам залишати відгуки про кавʼярню, обираючи одну з трьох оцінок: Good, Neutral або Bad. На основі введених даних відображається статистика голосів.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Функціональність
+- Голосування за допомогою кнопок
+- Підрахунок статистики відгуків
+- Умовний рендеринг статистики або повідомлення
+- Кнопка Reset для скидання результатів
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Використані технології
+- React
+- TypeScript
+- Vite
+- CSS Modules
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Демо
+Проєкт розгорнуто на Vercel.

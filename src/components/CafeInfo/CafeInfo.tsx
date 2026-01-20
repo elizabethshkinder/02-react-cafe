@@ -1,4 +1,4 @@
-import css from './CafeInfo.modules.css'
+import css from './CafeInfo.module.css'
 
 
 export default function CafeInfo () {
@@ -11,5 +11,5 @@ export default function CafeInfo () {
         </p>
     </div>
 
-  )
+  );
 }
